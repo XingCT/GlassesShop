@@ -414,7 +414,12 @@ p {
 .bg-4 {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .bg-4 img {
+    max-width: 50%; }
 
 .Celluloid {
   text-align: center;
