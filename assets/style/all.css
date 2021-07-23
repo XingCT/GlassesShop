@@ -143,7 +143,10 @@ h5 {
           line-height: 45px;
           border: 1px solid #FFFFFF; }
           .header ul li a {
-            padding: 12px 40px; } }
+            padding: 0; }
+            .header ul li a:hover {
+              background: #AA0601;
+              color: #FFFFFF; } }
 
 .footer {
   color: #ffffff;
@@ -728,7 +731,7 @@ h5 {
   display: -ms-flexbox;
   display: flex; }
   .choice li {
-    width: 33%; }
+    width: 370px; }
   .choice a {
     height: 96px;
     font-size: 32px;
@@ -747,6 +750,24 @@ h5 {
       font-size: 44px; }
     .choice a:hover {
       border-bottom: 8px solid #AA0601; }
+  @media (max-width: 960px) {
+    .choice li {
+      width: 230px; }
+    .choice a {
+      height: 60px;
+      font-size: 24px; }
+      .choice a span {
+        font-size: 32px; } }
+  @media (max-width: 720px) {
+    .choice li {
+      width: 115px; }
+    .choice a {
+      height: 30px;
+      font-size: 14px; }
+      .choice a span {
+        font-size: 16px; }
+      .choice a:hover {
+        border-bottom: 4px solid #AA0601; } }
 
 .bg-4 {
   display: -webkit-box;
@@ -754,14 +775,21 @@ h5 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  height: 304px; }
   .bg-4 img {
-    max-width: 50%; }
+    width: 50%; }
+  @media (max-width: 720px) {
+    .bg-4 {
+      height: 148px; } }
 
 .Celluloid {
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 160px; }
+  padding-top: 80px; }
+  .Celluloid h3 {
+    font-size: 42px; }
+  .Celluloid h4 {
+    font-size: 32px; }
   .Celluloid ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,32 +799,66 @@ h5 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 40px; }
+    margin-top: 32px; }
     .Celluloid ul li {
-      width: 23%;
-      padding-bottom: 104px; }
-      .Celluloid ul li .ntd {
+      margin-top: 8px;
+      margin-bottom: 96px; }
+      .Celluloid ul li img {
+        width: 255px;
+        height: 164px; }
+      .Celluloid ul li h5 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .Celluloid ul li .ntd .price {
+        .Celluloid ul li h5 span {
           color: #AA0601; }
       .Celluloid ul li .color {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .Celluloid ul li .color span {
+        .Celluloid ul li .color .brown {
+          background: #5F3E2D;
           width: 24px;
           height: 24px;
           margin-right: 8px;
           border-radius: 999em; }
-        .Celluloid ul li .color .brown {
-          background: #5F3E2D; }
         .Celluloid ul li .color .orange {
-          background: #B75929; }
+          background: #B75929;
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+          border-radius: 999em; }
+  @media (max-width: 960px) {
+    .Celluloid {
+      padding-top: 56px; }
+      .Celluloid h3 {
+        font-size: 32px; }
+      .Celluloid h4 {
+        font-size: 34px; }
+      .Celluloid ul {
+        margin-top: 25px; }
+        .Celluloid ul li {
+          margin-top: 7px;
+          margin-bottom: 65px; }
+          .Celluloid ul li img {
+            width: 330px; } }
+  @media (max-width: 720px) {
+    .Celluloid {
+      padding-top: 32px; }
+      .Celluloid h3 {
+        font-size: 20px; }
+      .Celluloid h4 {
+        font-size: 16px; }
+      .Celluloid ul {
+        margin-top: 28px; }
+        .Celluloid ul li {
+          margin-top: -8px;
+          margin-bottom: 40px; }
+          .Celluloid ul li img {
+            width: 345px; } }
 
 .next {
   display: -webkit-box;
@@ -804,7 +866,9 @@ h5 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 172px; }
   .next a {
     color: #555555;
     border: 1px solid #555555;
@@ -817,11 +881,26 @@ h5 {
     .next a:hover {
       background: #000000;
       color: #FFFFFF; }
+  @media (max-width: 960px) {
+    .next {
+      margin-bottom: 108px; } }
+  @media (max-width: 720px) {
+    .next {
+      margin-bottom: 68px; }
+      .next a {
+        font-size: 16px;
+        padding: 12px 15px; }
+        .next a .page {
+          font-size: 17px; } }
 
 .collectton {
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 160px; }
+  padding-bottom: 56px; }
+  .collectton h3 {
+    font-size: 42px; }
+  .collectton h4 {
+    font-size: 32px; }
   .collectton ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,37 +912,73 @@ h5 {
             justify-content: space-between;
     margin-top: 40px; }
     .collectton ul li {
-      width: 30%;
       padding-bottom: 104px; }
-      .collectton ul li .ntd {
+      .collectton ul li img {
+        width: 350px;
+        height: 224px; }
+      .collectton ul li h5 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .collectton ul li .ntd .price {
+        .collectton ul li h5 span {
           color: #AA0601; }
       .collectton ul li .color {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .collectton ul li .color span {
+        .collectton ul li .color .brown {
+          background: #5F3E2D;
           width: 24px;
           height: 24px;
           margin-right: 8px;
           border-radius: 999em; }
-        .collectton ul li .color .brown {
-          background: #5F3E2D; }
         .collectton ul li .color .orange {
-          background: #B75929; }
+          background: #B75929;
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+          border-radius: 999em; }
+  @media (max-width: 960px) {
+    .collectton {
+      padding-top: 56px;
+      padding-bottom: 24px; }
+      .collectton h3 {
+        font-size: 32px; }
+      .collectton h4 {
+        font-size: 24px; }
+      .collectton ul {
+        margin-top: 32px; }
+        .collectton ul li {
+          padding-bottom: 72px; }
+          .collectton ul li img {
+            width: 330px;
+            height: 164px; } }
+  @media (max-width: 720px) {
+    .collectton {
+      padding-top: 32px;
+      padding-bottom: 8px; }
+      .collectton h3 {
+        font-size: 20px; }
+      .collectton h4 {
+        font-size: 16px; }
+      .collectton ul {
+        margin-top: 20px; }
+        .collectton ul li {
+          padding-bottom: 32px; }
+          .collectton ul li img {
+            width: 345px;
+            height: 166px; } }
 
 .place {
   padding-top: 96px; }
-  .place h2 {
+  .place h3 {
+    font-weight: bold;
     border-left: 8px solid #9F1213;
     padding-left: 16px;
-    margin-bottom: 65px; }
+    margin-bottom: 60px; }
   .place label {
     font-size: 24px;
     margin-right: 20px; }
@@ -874,6 +989,36 @@ h5 {
     padding-left: 18px;
     color: #CED4DA;
     border: 1px solid #CED4DA; }
+  @media (max-width: 960px) {
+    .place {
+      padding-top: 60px; }
+      .place h3 {
+        font-weight: bold;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        margin-bottom: 40px; }
+      .place label {
+        font-size: 16px; }
+      .place select {
+        width: 237px;
+        height: 46px;
+        font-size: 16px;
+        padding-left: 16px; } }
+  @media (max-width: 720px) {
+    .place {
+      padding-top: 28px; }
+      .place h3 {
+        font-size: 28px;
+        padding-left: 8px;
+        margin-bottom: 24px; }
+      .place label {
+        font-size: 14px;
+        margin-right: 8px; }
+      .place select {
+        width: 277px;
+        height: 36px;
+        font-size: 14px;
+        padding-left: 16px; } }
 
 .shop {
   display: -webkit-box;
