@@ -1,0 +1,41 @@
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-red{
+    background-color: #AA0601;
+}
+.bg-scarlet{
+    background-color: #650300;
+}
+.bg-pink{
+    background-color: #AA06010D;
+}
+.bg-brown{
+    background-color: #5F3E2D;
+}
+.bg-orange{
+    background-color: #B75929;
+}
+.bg-logo{
+    background: url(../images/logo.png) no-repeat center center;
+    background-size:contain;
+}
+.bg-man{
+    background: url(../images/banner.png) center;
+    background-size: cover;
+}
+.bg-female{
+    background: url(../images/bg.png) center;
+    background-size: cover;
+}
+.bg-green{
+    background: url(../images/product-8.png) rgba(255, 255, 255, .5);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+.bg-glasses{
+    background: url(../images/product-9.png) rgba(255, 255, 255, .5);
+    background-blend-mode: lighten;
+    background-size: cover;
+}

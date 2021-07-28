@@ -1,0 +1,168 @@
+// optical
+.choice{
+    li{
+        width: calc(100% / 3);
+        font-weight: bold;
+        border: 1px solid #DCDCDC;
+    }
+    a{
+        line-height: 96px;
+        span{
+            font-size: 44px;
+            margin-right: 10px;
+        }
+        &:hover{
+            line-height: 88px;
+            color: #AA0601;
+            border-bottom: 8px solid #AA0601;
+        }
+    }
+    @include pad{
+        a{
+            line-height: 60px;
+            span{
+                font-size: 32px;
+                margin-right: 8px;
+            }
+            &:hover{
+                line-height: 52px;
+            }
+        }
+    }
+    @include mobile{
+        a{
+            line-height: 30px;
+            span{
+                font-size: 16px;
+                margin-right: 4px;
+            }
+            &:hover{
+                line-height: 26px;
+                border-bottom: 4px solid #AA0601;
+            }
+        }
+    }
+}
+
+.pic{
+    height: 304px;
+    img{
+        width: 50%;
+    }
+    @include mobile{
+        height: 148px;
+    }
+}
+
+.Celluloid{
+    .glasses{
+        margin-top: 32px;
+        li{
+            width: calc(25% - 22.5px);
+            margin-top: 8px;
+            margin-bottom: 96px;
+            img{
+                width: 100%;
+                height: 164px;
+            }
+            h5{
+                color: #000;
+                span{
+                    color: #AA0601;
+                }
+            }  
+        }
+    }
+    @include pad{
+        padding-top: 56px;
+        padding-bottom: 96px;
+        .glasses{
+            li{
+                width: calc(50% - 15px);
+                margin-top: 7px;
+                margin-bottom: 65px;
+            }
+        }
+    }
+    @include mobile{
+        padding-top: 32px;
+        padding-bottom: 56px;
+        .glasses{
+            margin-top: 20px;
+            li{
+                width:100%;
+                margin-top: -8px;
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+}
+
+.next{
+    a{
+        line-height: 48px;
+        border: 1px solid #555555;
+        padding: 0 16px;
+        &:hover{
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }        
+    .page{
+        padding: 0 12px;
+    }
+    @include mobile{
+        a{
+            line-height: 48px;
+            padding: 0 15px;
+        }
+        .page{
+            padding: 0 8px;
+            }
+    }
+}
+
+// sunglasses
+.collectton{
+    ul{
+        margin-top: 40px;
+        li{
+            width: calc(100% / 3 - 20px);
+            margin-bottom: 104px;
+            img{
+                width: 100%;
+                height: 224px;
+            }
+        }
+    }
+    @include pad{
+        padding-top: 56px;
+        padding-bottom: 24px;
+        ul{
+            margin-top: 32px;
+            li{
+                width: calc(50% - 15px);
+                padding-bottom: 72px;
+                img{
+                    height: 164px;
+                }
+            }
+        }
+    }
+    @include mobile{
+        padding-top: 32px;
+        padding-bottom: 8px;
+        ul{
+            margin-top: 20px;
+            li{
+                width: 100%;
+                padding-bottom: 32px;
+                margin: 0;
+                img{
+                    height: 166px;
+                }
+            }
+        }
+    }
+}

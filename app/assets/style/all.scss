@@ -1,4 +1,24 @@
-@import 'reset';
-@import 'mixin';
-@import 'layout';
-@import 'index';
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+
+@import 'helpers/mixin';
+
+// base
+@import 'base/reset';
+
+// helpers
+
+@import 'helpers/background';
+@import 'helpers/space';
+@import 'helpers/sizing';
+@import 'helpers/color';
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+// page
+@import 'page/index';
+@import 'page/product';
+@import 'page/location';
+@import 'page/blog';

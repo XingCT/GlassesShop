@@ -1,0 +1,171 @@
+
+.news{
+    padding: 12px 0; 
+    a{
+        color: white;
+    }
+    li{
+        margin-right: 48px;
+    }
+    span{
+        font-size: 30px;   
+    }
+}
+
+.bolg{
+    padding-top: 60px;
+    .group{
+        margin-bottom: 96px;
+        li{
+            margin-top: 60px;
+            height: 400px;
+            img{
+                width: calc(60% - 30px);
+            }
+            .set{
+                width: 40%;
+                p{
+                    margin-top: 24px;
+                }
+                h3{
+                    font-weight: bold;
+                }
+            }
+        }
+    } 
+    @include pad{
+        padding-top: 32px;
+        .group{
+            margin-bottom: 64px;
+            li{
+                margin-top: 24px;
+                height: 207px;
+                img{
+                    width: calc(50% - 15px);
+                }
+                .set{
+                    width: calc(50% - 15px);
+                    p{
+                        margin-top: 32px;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    h3{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }    
+    }   
+}
+
+
+.detail{
+    p{
+        margin: 8px 0;
+        &::after{
+            content: '情人特別企劃';
+            color: #AA0601;
+        }
+    }
+    span{
+        font-size: 24px;
+        color: #AA0601;
+        margin-right: 16px;
+    }
+}
+
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    .event{
+        width: 75%;
+        padding-bottom: 160px;
+        h2{
+            font-size: 48px;
+        }
+        h4{
+            font-size: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 16px;
+            }
+        }
+        img{
+            margin: 24px 0;
+        }
+        p{
+            font-size: 20px;
+            color: #0A0A0A;
+            padding-bottom: 16px;
+        }
+        .share{
+            p{
+                color: #0A0A0A;
+                margin-bottom: 4px;
+                margin-top: 24px;
+            }
+            svg{
+                margin-left: 16px;
+            }
+            .arrow{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #707070;
+                p{
+                    font-size: 19px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .tags{
+        width: 23%;
+        color: #AA0601;
+        h4{
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 38px;
+                margin-right: 12px;
+            }
+        }
+        span{
+            font-size: 24px;
+            margin: 8px 0;
+            margin-right: 24px;
+        }
+    }
+}
+
+.problem{
+    padding-top: 96px;
+    padding-bottom: 160px;
+    h2{
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        margin-bottom: 65px;
+    }
+    h3{
+        font-size: 32px;
+        margin: 36px 0;
+    }
+    li{
+        margin-bottom: 32px;
+        h4{
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        p{
+            padding-left: 95px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.fz72{
+    font-size: 72px;
+}
+.fz42{
+    font-size: 42px;
+}
+.fz30{
+    font-size: 30px;
+}
+.fz32{
+    font-size: 32px;
+}
+.fz28{
+    font-size: 28px;
+}
+.fz20{
+    font-size: 20px;
+}
+.fz19{
+    font-size: 19px;
+}
+.fz18{
+    font-size: 18px;
+}
+.fz16{
+    font-size: 16px;
+}
+.fz14{
+    font-size: 14px;
+}
+
+// pad
+.m-fz64{
+    @include pad{
+        font-size: 64px;
+    }
+}
+.m-fz48{
+    @include pad{
+        font-size: 48px;
+    }
+}
+.m-fz42{
+    @include pad{
+        font-size: 42px;
+    }
+}
+.m-fz36{
+    @include pad{
+        font-size: 36px;
+    }
+}
+.m-fz32{
+    @include pad{
+        font-size: 32px;
+    }
+}
+.m-fz28{
+    @include pad{
+        font-size: 28px;
+    }
+}
+.m-fz24{
+    @include pad{
+        font-size: 24px;
+    }
+}
+.m-fz20{
+    @include pad{
+        font-size: 20px;
+    }
+}
+.m-fz16{
+    @include pad{
+        font-size: 16px;
+    }
+}
+.m-fz14{
+    @include pad{
+        font-size: 14px;
+    }
+}
+
+// mobile
+.s-fz64{
+    @include mobile{
+        font-size: 64px;
+    }
+}
+.s-fz48{
+    @include mobile{
+        font-size: 48px;
+    }
+}
+.s-fz42{
+    @include mobile{
+        font-size: 42px;
+    }
+}
+.s-fz36{
+    @include mobile{
+        font-size: 36px;
+    }
+}
+.s-fz32{
+    @include mobile{
+        font-size: 32px;
+    }
+}
+.s-fz28{
+    @include mobile{
+        font-size: 28px;
+    }
+}
+.s-fz24{
+    @include mobile{
+        font-size: 24px;
+    }
+}
+.s-fz20{
+    @include mobile{
+        font-size: 20px;
+    }
+}
+.s-fz17{
+    @include mobile{
+        font-size: 17px;
+    }
+}
+.s-fz16{
+    @include mobile{
+        font-size: 16px;
+    }
+}
+.s-fz14{
+    @include mobile{
+        font-size: 14px;
+    }
+}

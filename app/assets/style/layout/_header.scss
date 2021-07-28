@@ -1,0 +1,44 @@
+.header{
+    padding: 0 56px 0 88px;
+    h1 a{
+        width: 80px;
+        height: 48px;
+        text-indent: 101%;
+        overflow: hidden;
+    }
+    li a{
+        padding: 0 32px;
+        line-height: 108px;
+        color: #FFFFFF;
+        &:hover{
+            background: #FFFFFF;
+            color: #AA0601;
+        }
+    }
+    @include pad{
+        padding: 0 19px 0 39px;
+        li a{
+            padding: 0 20px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;            
+        text-align: center;
+        padding: 0;
+        h1 a{
+            width: 48px;
+            height: 50px;
+        }
+        ul{
+            flex-wrap: wrap;
+            width: 100%;
+            li{
+                width: 50%;
+                a{
+                    line-height: 45px;
+                    border: 1px solid #FFFFFF;
+                }
+            }
+        }
+    }
+}

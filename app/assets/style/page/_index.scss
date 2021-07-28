@@ -1,0 +1,258 @@
+.title{
+    height: 840px;
+    @include mobile{
+        height: 394px;
+    }
+}
+
+.Promise{
+    h3, h5{
+        font-weight: bold;
+    }
+    ul{
+        margin-top: 40px;
+        li{
+            width: calc(25% - 22.5px);
+            img{
+                margin-bottom: 16px;
+            }
+            p{
+                margin-top: 8px;
+            }
+        }
+    }
+    @include pad{
+        ul{
+            margin: 0 37.5px;
+            margin-top: 32px;
+            li{
+                width: calc(50% - 52.5px);
+                margin-bottom: 32px; 
+            }
+        }
+    }
+    @include mobile{
+        ul{
+            margin: 0 45px;
+            margin-top: 28px;
+            li{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.Frame{
+    h3{
+        margin-bottom: 8px;
+    }
+    img{
+        max-width: 635px;
+    }    
+    li{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 32px;
+        h3{
+            margin: 30px;
+        }
+        span{
+            font-size: 44px;
+            margin-right: 8px;
+        }
+    }
+    @include pad{
+        img{
+            max-width: 390px;
+        }
+        h3{
+            margin-bottom: 24px;
+        }
+        li{
+            margin-top: 8px;
+        }
+        span{
+            font-size: 40px;
+        }
+    }
+    @include mobile{
+        img{
+            max-width: 345px;
+        }
+        h3{
+            margin-bottom: 16px;
+        }
+        li{
+            margin-top: 8px;
+            position: relative;
+            h3{
+                position: absolute;
+                top: 47px;
+                margin:0;
+            }
+        }
+        li[type='1']{
+            h3{
+                left: 104px;
+            }
+        }
+        li[type='2']{
+            h3{
+                left: 78px;
+            }
+        }
+        li[type='3']{
+            h3{
+                left: 84px;
+            }
+        }
+    }
+}
+
+.branding{     
+    font-weight: bold;
+    ul{
+        margin-top: 40px;
+        li{
+            width: calc(50% - 15px);
+            a{
+                line-height: 445px;
+                color: #AA0601;
+            }
+        }
+    }
+    @include pad{
+        ul{
+            margin-top: 32px;
+            li a{
+                line-height: 278px;
+            }
+        }
+    }
+    @include mobile{
+        ul{
+            margin-top: 20px;
+            li{
+                width: 100%;
+                margin: 0;
+                margin-bottom: 16px;
+                a{
+                    line-height: 291px;
+                }
+                
+            }
+        }
+    }
+}
+
+.customer{
+    h3{
+        font-weight: bold;
+    }
+    ul{
+        margin-top: 40px;
+        li{
+            width: calc(25% - 22.5px);
+            img{
+                height: 256px;
+            }
+            .content{
+                border: 1px solid #DEE2E6;
+                box-shadow:0px 2px 6px #00000029;
+                height: 204px;
+                padding: 16px;
+            }
+        }
+    }
+    @include pad{
+        ul{
+            margin: 0;
+            li{
+                width: calc(50% - 15px);
+                margin-top: 32px;
+                img{
+                    width: 100%;
+                }
+                .content{
+                    padding: 16px 24px;
+                }
+            }
+        }
+    }
+    @include mobile{
+        ul{
+            margin-top: 4px;
+            li{
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+.contact{
+    max-width: 730px;
+    margin: 0 auto;
+    h3{
+        margin-bottom: 24px;
+    }
+    h5{
+        margin-bottom: 20px;
+    }
+    input[type='text']{
+        height: 50px;
+        margin-bottom: 16px;
+        text-indent: 1rem;
+        border: 1px solid #000;
+        outline: none;
+    }
+    textarea{
+        height: 136px;
+        resize: none;
+        outline: none;
+        border: 1px solid #000;
+        margin-bottom: 16px;
+        padding: 12px 16px;
+    }
+    input[type='checkbox']{
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+    }
+    button{
+        border: none;
+        padding: 16px 143px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    @include pad{
+        max-width: 450px;
+        h5{
+            margin-bottom: 16px;
+        }
+        input[type='text']{
+            height: 36px;
+            margin-bottom: 8px;
+            text-indent: 12px;
+        }
+        textarea{
+            height: 100px;
+            margin-bottom: 8px;
+            padding: 8px 12px;
+        }
+        input[type='checkbox']{
+            width: 17.63px;
+            height: 17.63px;
+            margin-right: 2.37px;
+        }
+        button{
+            padding: 10px 77px;
+            margin-top: 20px;
+        }
+    }
+    @include mobile{
+        max-width: 345px;
+        h3{
+            margin-bottom: 20px;
+        }
+    }
+}

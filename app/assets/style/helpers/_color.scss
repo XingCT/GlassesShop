@@ -1,0 +1,61 @@
+// color
+.black{
+    color: #000;
+}
+.gray{
+    color: #707070;
+}
+.dark-gray{
+    color: #555555;
+}
+.white{
+    color: #FFFFFF;
+}
+.red{
+    color: #AA0601;
+}
+.dark-red{
+    color: #650300;
+}
+
+// pad
+.m-black{
+    @include pad{
+        color: #000;
+    }
+}
+.m-white{
+    @include pad{
+        color: #FFFFFF;
+    }
+}.m-red{
+    @include pad{
+        color: #AA0601;
+    }
+}.m-dark-red{
+    @include pad{
+        color: #650300;
+    }
+}
+
+// mobile
+.s-black{
+    @include mobile{
+        color: #000;
+    }
+}
+.s-white{
+    @include mobile{
+        color: #FFFFFF;
+    }
+}.s-red{
+    @include mobile{
+        color: #AA0601;
+    }
+}.s-dark-red{
+    @include mobile{
+        color: #650300;
+    }
+}
+
+

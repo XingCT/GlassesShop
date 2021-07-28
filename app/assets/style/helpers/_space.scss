@@ -1,0 +1,122 @@
+.d-flex{
+    display: flex;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+
+.fd-column{
+    flex-direction: column;
+}
+.fd-reverse{
+    flex-direction: row-reverse;
+}
+
+
+.jc-between{
+    justify-content: space-between;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-end{
+    justify-content: flex-end;
+}
+
+
+.ai-center{
+    align-items: center;
+}
+.ai-end{
+    align-items: flex-end;
+}
+.ai-line{
+    align-items: baseline;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-end{
+    text-align: end;
+}
+.txt-left{
+    text-align: left;
+}
+.m-d-flex{
+    @include pad{
+        display: flex;
+    }
+}
+.m-f-wrap{
+    @include pad{
+        flex-wrap: wrap;
+    }
+}
+.m-jc-between{
+    @include pad{
+        justify-content: space-between;
+    }
+}
+.m-fd-column{
+    @include pad{
+        flex-direction: column;        
+    }
+}
+.m-fd-reverse{
+    @include pad{
+        flex-direction: row-reverse;
+    }
+}
+.m-ai-start{
+    @include pad{
+        align-items:flex-start;        
+    }
+}
+.s-fd-column{
+    @include mobile{
+        flex-direction: column;        
+    }
+}
+
+.p60-80{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+    @include mobile{
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}
+.p96-160{
+    padding-top: 96px;
+    padding-bottom: 160px;
+    @include pad{
+        padding-top: 60px;
+        padding-bottom: 96px;
+    }
+    @include mobile{
+        padding-top: 28px;
+        padding-bottom: 56px;
+    }
+}
+
+
+.square{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius:30%;
+}
+
+.headline{
+    font-weight: bold;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    @include mobile{
+        padding-left: 8px;
+    }
+}
