@@ -7,32 +7,22 @@
     select{
         margin-top: 60px;
         margin-left: 20px;
-        max-width: 324px;
-        height: 45px;
-        font-size: 18px;
-        text-indent: 19px;
+        width: 32%;
+        padding: 9px 0 10px 16px;
         color: #495057;
         border: 1px solid #CED4DA;
         outline: none;
     }
     @include pad{
         select{
-            width: 237px;
-            height: 46px;
-            font-size: 16px;
-            text-indent: 16px;
+            padding: 12px 0 12px 16px;
         }  
     }
     @include mobile{
-        label{
-            font-size: 14px;
-        }
         select{
             margin-top: 24px;
             margin-left: 8px;
-            width: 277px;
-            height: 36px;
-            font-size: 14px;
+            width: 80%;
         }  
     }
 }

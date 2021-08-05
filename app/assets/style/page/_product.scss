@@ -7,14 +7,14 @@
     }
     a{
         line-height: 96px;
+        border-bottom: 8px solid #FFFFFF;
         span{
             font-size: 44px;
             margin-right: 10px;
         }
         &:hover{
-            line-height: 88px;
             color: #AA0601;
-            border-bottom: 8px solid #AA0601;
+            border-bottom: 8px solid #691d1a;
         }
     }
     @include pad{
@@ -24,20 +24,17 @@
                 font-size: 32px;
                 margin-right: 8px;
             }
-            &:hover{
-                line-height: 52px;
-            }
         }
     }
     @include mobile{
         a{
             line-height: 30px;
+            border-bottom: 4px solid #FFFFFF;
             span{
                 font-size: 16px;
                 margin-right: 4px;
             }
             &:hover{
-                line-height: 26px;
                 border-bottom: 4px solid #AA0601;
             }
         }
@@ -70,6 +67,9 @@
                 span{
                     color: #AA0601;
                 }
+            }
+            button{
+                cursor: pointer
             }  
         }
     }
@@ -115,7 +115,7 @@
     @include mobile{
         a{
             line-height: 48px;
-            padding: 0 15px;
+            padding: 0 14px;
         }
         .page{
             padding: 0 8px;
