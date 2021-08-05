@@ -278,8 +278,14 @@ p {
 .fz72 {
   font-size: 72px; }
 
+.fz48 {
+  font-size: 48px; }
+
 .fz42 {
   font-size: 42px; }
+
+.fz36 {
+  font-size: 36px; }
 
 .fz30 {
   font-size: 30px; }
@@ -445,7 +451,8 @@ p {
     width: 80px;
     height: 48px;
     text-indent: 101%;
-    overflow: hidden; }
+    overflow: hidden;
+    white-space: nowrap; }
   .header li a {
     padding: 0 32px;
     line-height: 108px;
@@ -499,9 +506,9 @@ p {
     border-bottom: 1px solid #FFFFFF; }
     .footer .top .menu li {
       margin: 16px 24px 36px 0px; }
-    .footer .top .menu h4 {
+    .footer .top .phone li {
       margin-bottom: 16px; }
-      .footer .top .menu h4 i {
+      .footer .top .phone li i {
         margin-right: 16px; }
     .footer .top .link li {
       margin-left: 32px; }
@@ -514,9 +521,9 @@ p {
       padding: 32px 0; }
       .footer .top .menu li {
         margin: 0px 40px 18px 0; }
-      .footer .top .menu h4 {
+      .footer .top .phone li {
         margin-bottom: 12px; }
-        .footer .top .menu h4 i {
+        .footer .top .phone li i {
           margin-right: 8px; }
       .footer .top .link li {
         margin-left: 24px; }
@@ -529,11 +536,11 @@ p {
       padding: 24px 0; }
       .footer .top {
         padding-bottom: 18px; }
-        .footer .top .menu ul {
+        .footer .top .menu {
           display: none; }
-        .footer .top .menu h4 {
+        .footer .top .phone li {
           margin-bottom: 6px; }
-          .footer .top .menu h4 i {
+          .footer .top .phone li i {
             margin-right: 5px; }
       .footer .down {
         -webkit-box-orient: vertical;
@@ -620,14 +627,11 @@ p {
     position: relative; }
     .Frame li h3 {
       position: absolute;
-      top: 47px;
-      margin: 0; }
-  .Frame li[type='1'] h3 {
-    left: 104px; }
-  .Frame li[type='2'] h3 {
-    left: 78px; }
-  .Frame li[type='3'] h3 {
-    left: 84px; } }
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
 
 .branding {
   font-weight: bold; }
@@ -688,16 +692,16 @@ p {
       margin-top: 16px; } }
 
 .contact {
-  max-width: 730px;
+  width: 75%;
   margin: 0 auto; }
   .contact h3 {
     margin-bottom: 24px; }
   .contact h5 {
     margin-bottom: 20px; }
   .contact input[type='text'] {
-    height: 50px;
+    padding: 12px 0 14px 16px;
+    line-height: 1.5;
     margin-bottom: 16px;
-    text-indent: 1rem;
     border: 1px solid #000;
     outline: none; }
   .contact textarea {
@@ -708,37 +712,34 @@ p {
     margin-bottom: 16px;
     padding: 12px 16px; }
   .contact input[type='checkbox'] {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     margin-right: 4px; }
   .contact button {
     border: none;
-    padding: 16px 143px;
+    width: 50%;
+    padding: 16px 0;
     margin: 0 auto;
-    margin-top: 40px; }
+    margin-top: 40px;
+    cursor: pointer; }
   @media (max-width: 960px) {
     .contact {
-      max-width: 450px; }
+      width: 65%; }
       .contact h5 {
         margin-bottom: 16px; }
       .contact input[type='text'] {
-        height: 36px;
-        margin-bottom: 8px;
-        text-indent: 12px; }
+        padding: 8px 0 8px 12px;
+        margin-bottom: 8px; }
       .contact textarea {
         height: 100px;
         margin-bottom: 8px;
         padding: 8px 12px; }
-      .contact input[type='checkbox'] {
-        width: 17.63px;
-        height: 17.63px;
-        margin-right: 2.37px; }
       .contact button {
-        padding: 10px 77px;
+        padding: 10px 0;
         margin-top: 20px; } }
   @media (max-width: 720px) {
     .contact {
-      max-width: 345px; }
+      width: 100%; }
       .contact h3 {
         margin-bottom: 20px; } }
 
@@ -748,32 +749,30 @@ p {
   border: 1px solid #DCDCDC; }
 
 .choice a {
-  line-height: 96px; }
+  line-height: 96px;
+  border-bottom: 8px solid #FFFFFF; }
   .choice a span {
     font-size: 44px;
     margin-right: 10px; }
   .choice a:hover {
-    line-height: 88px;
     color: #AA0601;
-    border-bottom: 8px solid #AA0601; }
+    border-bottom: 8px solid #691d1a; }
 
 @media (max-width: 960px) {
   .choice a {
     line-height: 60px; }
     .choice a span {
       font-size: 32px;
-      margin-right: 8px; }
-    .choice a:hover {
-      line-height: 52px; } }
+      margin-right: 8px; } }
 
 @media (max-width: 720px) {
   .choice a {
-    line-height: 30px; }
+    line-height: 30px;
+    border-bottom: 4px solid #FFFFFF; }
     .choice a span {
       font-size: 16px;
       margin-right: 4px; }
     .choice a:hover {
-      line-height: 26px;
       border-bottom: 4px solid #AA0601; } }
 
 .pic {
@@ -797,6 +796,8 @@ p {
       color: #000; }
       .Celluloid .glasses li h5 span {
         color: #AA0601; }
+    .Celluloid .glasses li button {
+      cursor: pointer; }
 
 @media (max-width: 960px) {
   .Celluloid {
@@ -832,7 +833,7 @@ p {
 @media (max-width: 720px) {
   .next a {
     line-height: 48px;
-    padding: 0 15px; }
+    padding: 0 14px; }
   .next .page {
     padding: 0 8px; } }
 
@@ -876,30 +877,21 @@ p {
 .place select {
   margin-top: 60px;
   margin-left: 20px;
-  max-width: 324px;
-  height: 45px;
-  font-size: 18px;
-  text-indent: 19px;
+  width: 32%;
+  padding: 9px 0 10px 16px;
   color: #495057;
   border: 1px solid #CED4DA;
   outline: none; }
 
 @media (max-width: 960px) {
   .place select {
-    width: 237px;
-    height: 46px;
-    font-size: 16px;
-    text-indent: 16px; } }
+    padding: 12px 0 12px 16px; } }
 
 @media (max-width: 720px) {
-  .place label {
-    font-size: 14px; }
   .place select {
     margin-top: 24px;
     margin-left: 8px;
-    width: 277px;
-    height: 36px;
-    font-size: 14px; } }
+    width: 80%; } }
 
 .shop li {
   width: calc(100% / 3 - 20px);
@@ -1136,14 +1128,16 @@ p {
     padding-left: 16px;
     margin-bottom: 65px; }
   .problem h3 {
-    font-size: 32px;
     margin: 36px 0; }
   .problem li {
     margin-bottom: 32px; }
     .problem li h4 {
-      font-size: 20px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      font-weight: bold; }
     .problem li p {
       padding-left: 95px; }
+  @media (max-width: 720px) {
+    .problem li p {
+      padding: 0; } }
 
 /*# sourceMappingURL=all.css.map */

@@ -89,7 +89,7 @@
 </div>
 
 <div class="customer container p60-80 txt-center">
-  <h3 class="dark-red m-fz32 s-fz20">顧客推薦</h3>
+  <h4 class="dark-red fz48 m-fz32 s-fz20">顧客推薦</h4>
   <ul class="d-flex jc-between m-f-wrap">
     <li> 
       <img src="./assets/images/rec-1.png" alt="">
@@ -138,52 +138,65 @@
 </div>
 
 <div class="bg-pink">
-  <from class="contact d-flex p60-80 fd-column">
-    <h3 class="txt-center m-fz32">聯絡我們</h3>
-    <h5 class="fz20 m-fz16">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</h5>
-    
-    <label for='name' class="m-fz14">姓名</label>
-    <input type="text" id='name' placeholder="陳小明" class="bg-transparent">
-      
-    <label for="number" class="m-fz14">聯絡電話</label>
-    <input type="text" id="number" placeholder="0912-345-678" class="bg-transparent">
-    
-    <label for="email" class="m-fz14">電子郵件</label>
-    <input type="text" id="email" placeholder="example@email.com" class="bg-transparent">
-    
-    <label for="feedback" class="m-fz14">意見反應</label>
-    <textarea id="feedback" placeholder="請輸入您的意見" class="bg-transparent"></textarea>
-    
-    <p class="d-flex ai-center m-ai-start">
-      <input type="checkbox" id="cbox1">
-      <label for="cbox1" class="m-fz14">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-    </p>
+  <div class="container">
+    <div class="contact p60-80">
+      <h3 class="txt-center m-fz32">聯絡我們</h3>
+      <h5 class="fz20 m-fz16">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</h5>
 
-    
-    <button class="submit white bg-red fz16 m-fz14">確認送出</button>
-  </from>
-  
+      <form class="d-flex fd-column">
+
+        <label for='name' class="m-fz14">姓名</label>
+        <input type="text" id='name' placeholder="陳小明" class="bg-transparent fz16 m-fz14">
+
+        <label for="number" class="m-fz14">聯絡電話</label>
+        <input type="text" id="number" placeholder="0912-345-678" class="bg-transparent fz16 m-fz14">
+
+        <label for="email" class="m-fz14">電子郵件</label>
+        <input type="text" id="email" placeholder="example@email.com" class="bg-transparent fz16 m-fz14">
+
+        <label for="feedback" class="m-fz14">意見反應</label>
+        <textarea id="feedback" placeholder="請輸入您的意見" class="bg-transparent fz16 m-fz14"></textarea>
+
+        <p class="d-flex ai-center m-ai-start">
+          <input type="checkbox" id="cbox1">
+          <label for="cbox1" class="m-fz14">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        </p>
+
+
+        <button class="submit white bg-red fz16 m-fz14">確認送出</button>
+      </form>
+    </div>
+  </div>
 </div>
 
   <footer class="footer bg-red white">
     <div class="container">
       <div class="top d-flex jc-between">
-        <div class="menu">
-          <ul class="d-flex fz16">
+        <div>
+          <ul class="menu d-flex fz16">
             <li><a href="./index.html">首頁</a></li>
             <li><a href="./product_optical.html">系列鏡框</a></li>
             <li><a href="./location.html">門市據點</a></li>
             <li><a href="./blog.html">部落格</a></li>
             <li><a href="./problem.html">常見問題</a></li>
           </ul>
-          <h4 class="d-flex ai-center m-fz20 s-fz16"><i class="fas fa-phone-alt"></i>0800-000-000</h4>
-          <h4 class="d-flex ai-center m-fz20 s-fz16"><i class="fas fa-envelope"></i>glasses@business.com</h4>
+
+          <ul class="phone">
+            <li class="d-flex ai-center fz36 m-fz20 s-fz16"><i class="fas fa-phone-alt"></i>0800-000-000</li>
+            <li class="d-flex ai-center fz36 m-fz20 s-fz16"><i class="fas fa-envelope"></i>glasses@business.com</li>
+          </ul>
+
+          <!-- <h4 class="d-flex ai-center m-fz20 s-fz16"><i class="fas fa-phone-alt"></i>0800-000-000</h4>
+          <h4 class="d-flex ai-center m-fz20 s-fz16"><i class="fas fa-envelope"></i>glasses@business.com</h4> -->
+        
         </div>
+
         <ul class="link d-flex">
           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li><a href="#"><i class="fab fa-line"></i></a></li>
         </ul>
+
       </div>
       <div class="down d-flex jc-between ai-center">
         <p class="s-fz14">Copyright © 2020 Glasses.All rights reserved.</p>
